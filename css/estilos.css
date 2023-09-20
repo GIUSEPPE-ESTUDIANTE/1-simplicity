@@ -9,7 +9,7 @@ cores do site  */
 
 :root {
     --cor-titulo: #4d4d4d;
-    --cor-texto: darkblue;
+    --cor-texto: black;
     --cor-escura: red;
     --cor-clara: #fff;
     --cor-intermediaria: #ececec;
@@ -81,8 +81,15 @@ nav h2 a:focus {
     background-color: var(--cor-intermediaria);
 }
 
+/* Regra da lista ul de links */
+
 .menu {
     list-style: none;
+
+    /* Usamos display: none para
+    nâo exibir inicialmente 
+    a lista de links.*/
+    display: none;
 }
 
 /* Regra para formatar os 
@@ -95,8 +102,34 @@ links contidos na lista/menu */
     align-items: center;
     justify-content: center;
     height: 50px;
-    border: solid 1px;
+
 
 
 }
+/* Seletor de classes combinadas 
+esta regra somente ira funcionar quando 
+AS DUAS CLASSES estiverem aplicadas juntas no
+elemento HTML(no caso, na lista de menu/links).
 
+Obs.: esta combinaçâo sera possivel por meio
+da manipulaçâo programada com JavaScripy*/
+.menu.aberto {
+
+    /* O Flex farà  a lista de links aparecer */
+    display: flex;
+
+/* Com os links em forma de coluna(vertical) */
+    flex-direction: column;
+    
+    
+    /* Usamos as propriedades de posicionamento
+    e coordenadas para garantir o encaixe correto
+    (abaixo do titulo e da palavra menu.*/
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-color: var(--cor-clara);
+    /* Aplicamos um fundo à lista evitando a 
+    dificuldade de leitura dos links */
+}
