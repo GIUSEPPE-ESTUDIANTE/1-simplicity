@@ -150,6 +150,9 @@ da manipulaçâo programada com JavaScripy*/
 
 .destaque h2, .destaque p {
     text-align: center;
+    animation-name: animaDestaque;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; 
 }
 
 .destaque h2 {
@@ -160,10 +163,26 @@ da manipulaçâo programada com JavaScripy*/
      )*/
     font-size: clamp(3rem , 10vw, 8rem);
     color: var(--cor-escura);
+    
 }
 .destaque p {
     font-size: clamp(1.5rem, 3vw, 3rem);
-    color: var(--cor-clara);   
+    color: var(--cor-clara);
+    
+
+}
+
+/* Regra de animaçâo */
+@keyframes animaDestaque { 
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to {
+        opacity: 1;
+    }
+
 
 }
 
