@@ -148,14 +148,22 @@ da manipulaçâo programada com JavaScripy*/
 
 }
 
-.destaque, h2 {
-    font-size: 2rem;
+.destaque h2, .destaque p {
+    text-align: center;
+}
+
+.destaque h2 {
+    /* clamp(
+    tamanho mini,
+    tamanho ideal,
+    tamanho maximo
+     )*/
+    font-size: clamp(3rem , 10vw, 8rem);
     color: var(--cor-escura);
 }
 .destaque p {
-    font-size: 1rem;
-    color: var(--cor-clara);
-    text-align: center;
-    
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: var(--cor-clara);   
 
 }
+
