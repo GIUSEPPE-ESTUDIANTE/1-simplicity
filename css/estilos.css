@@ -61,11 +61,19 @@ a {
     text-decoration: none;
 }
 
-header {
+header .limitador {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 15vh;
+    justify-content: space-around;
+    height: 12vh;
+
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-clara);
 }
 
 
