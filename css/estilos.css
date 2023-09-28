@@ -164,8 +164,8 @@ da manipulaçâo programada com JavaScripy*/
     animation-timing-function: ease-in-out;
 }
 
-.destaque h2{
-     font-size: clamp(3rem, 10vw, 8rem);
+.destaque h2 {
+    font-size: clamp(3rem, 10vw, 8rem);
 }
 
 .destaque p {
@@ -229,12 +229,12 @@ address {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.historia h2{
+.historia h2 {
     color: var(--cor-clara);
-    text-shadow: 0.1em 0.1em 0.2em var(--cor-intermediaria) ;
+    text-shadow: 0.1em 0.1em 0.2em var(--cor-intermediaria);
 }
 
 .historia iframe {
@@ -243,18 +243,18 @@ address {
     margin: 2rem;
 }
 
-.localizaçao iframe{
+.localizaçao iframe {
     width: 100%;
     margin-top: 2rem;
 }
 
-.limitador{
+.limitador {
 
     width: 95vw;
     margin: auto;
 }
 
-footer{
+footer {
     background-color: var(--cor-escura);
     color: var(--cor-clara);
     height: 30vh;
@@ -266,3 +266,62 @@ footer{
 
 
 }
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 570px) {
+
+    nav h2 {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        /* align-items: center;
+        justify-content: space-around;
+        width: 100%; */
+    
+    }
+
+
+    .menu li { width: 100%;}
+
+    nav {
+        width: 70%;
+    }
+
+    .front-end img {
+        height: 200px
+    }
+
+  
+}
+
+@media screen and (min-width:900px)   {
+
+    .text{
+        font-size: 18px;
+    }
+
+
+    .limitador{max-width: 900px;
+
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
