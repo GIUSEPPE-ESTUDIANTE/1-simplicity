@@ -73,6 +73,7 @@ header .limitador {
 header {
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: var(--cor-clara);
 }
 
@@ -330,8 +331,8 @@ td:last-child::before{ content: "R$" ;
     left: 10px;
 }
 
-.conteudo h2::before{ content: " 🤑";}
-
+.produtos::before{ content: "🤑 ";}
+.servicos::before { content: "😄 ";}
 
 .fotos {
     margin: 0;
@@ -342,11 +343,14 @@ td:last-child::before{ content: "R$" ;
     border-radius: 100px;
     transition: 1s;
     transform: scale(80%);
+    filter: blur(2px);
 }
 
-.fotos img:hover{
+/*Aplicamos o :hover e o :focus ao seletor  */
+.fotos a:hover img, .fotos a:focus img {
     transform: scale(100%);
     border-radius: 0;
+    filter: blur(0);
 }
 
 
