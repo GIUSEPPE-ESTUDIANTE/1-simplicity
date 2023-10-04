@@ -333,6 +333,7 @@ td:last-child::before{ content: "R$" ;
 
 .produtos::before{ content: "🤑 ";}
 .servicos::before { content: "😄 ";}
+.contato::before { content: '✋🏼';}
 
 .fotos {
     margin: 0;

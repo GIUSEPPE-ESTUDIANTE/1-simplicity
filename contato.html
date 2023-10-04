@@ -39,7 +39,7 @@
 
     <main>
         <article class="limitador conteudo">
-            <h2 class="produtos">Produtos</h2>
+            <h2 class="contato">Produtos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste culpa corrupti tempore veritatis eius dolor, accusamus incidunt omnis, voluptatibus dolores laudantium voluptas cum sapiente reiciendis voluptates nihil nisi harum! Odit.</p>
             
             <form action="" method="post" autocomplete="off"> 
@@ -52,21 +52,46 @@
         </div>
                 <!-- e-mail -->
                 <label for="e-mail">E-mail:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <div>
 
                     <!-- data de nascimento -->
 
                     <div>
-                        <label for="nascimento">data de nascimento</label>
+                        <label for="nascimento">Data de Nascimento</label>
                         <input type="date" name="nascimento" id="nascimento">
                     </div>
                     <!-- telefone -->
 
                     <div>
-                        <label for="telefone">telefone</label>
+                        <label for="telefone">Telefone</label>
                         <input type="tel" name="telefone" id="telefone">
                     </div>
+                    <!-- assunto -->
+                    <div>
+                        <label for="assunto">Assunto</label>
+                        <select name="assunto" id="assunto">
+                            <!-- Deixe um option vazio
+                            de proposito -->
+                            <option value=""></option>
+                            <option>Duvidas</option>
+                            <option>Elogios</option>
+                            <option>Reclamaçôes</option>
+                            <option>Outros</option>
+                       </select>
+                    </div>
+                    <!-- mensagem -->
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+                    </div>
+
+                    <button type="submit">Enviar dados</button>
+
+                    <hr>
+
+        
 
 
 
