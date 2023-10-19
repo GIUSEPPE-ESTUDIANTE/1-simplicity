@@ -10,3 +10,11 @@ const menu = document.querySelector(".menu");
 
 // Selecionando o link que esta dentro do h2
 const textobotao = document.querySelector("a")
+
+botaoMenu.addEventListener("click", function(event){
+
+    /* Anular/prevenir o comportamento do link */
+    event.preventDefault();
+    menu.classList.toggle("aberto");
+
+});
