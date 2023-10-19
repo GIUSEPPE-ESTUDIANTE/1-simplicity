@@ -407,6 +407,11 @@ button:hover, button:focus {
 
 }
 
+#cep { width: 60%; }
+#buscar{
+    width: 39%;
+    padding: 12px;
+}
 
 
 
