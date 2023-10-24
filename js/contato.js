@@ -55,11 +55,17 @@ botaoBuscar.addEventListener("click",async function (event){
   mensagem.textContent = "CEP encontrado!";
 mensagem.style.color = "blue";
 
+const exemplos = document.querySelectorAll("exemplo");
+for (const exemplo of exemplos){
+    exemplo.classList.remove("exemplo")
+}
+
 
 campoBairro.value = dados.logradouro;
 campoEndereco.value = dados.bairro;
 campoCidade.value = dados.localidade;
 campoEstado.value = dados.uf;
  }
+ 
 
 });
