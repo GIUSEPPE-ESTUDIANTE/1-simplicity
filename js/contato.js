@@ -33,7 +33,7 @@ botaoBuscar.addEventListener("click",async function (event){
     
 
     /* Verificando se cep o tem 8 digitos */
-    if(campoCep.value.length !== 8){
+    if(campoCep.value.length !== 9){
        mensagem.textContent = "Digite um CEP valido" ;
        mensagem.style.color = "purple";
        mensagem.style.fontSize = "12px";
