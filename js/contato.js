@@ -18,8 +18,8 @@ const campoTelefone = formulario.querySelector("#telefone");
 // const campoTelefone = $("telefone");
 
 // Ativando a mascara para o telefone
-$(campoTelefone).mask("(00) 00000-0000"); 
-// 
+$(campoTelefone).mask("(00) 0000-0000"); //exemplo: (11) 2135-0300
+$(campoCep).mask("00000-000"); //  Exemplo: 03619-000
 
 
 
