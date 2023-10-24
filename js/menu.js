@@ -9,7 +9,7 @@ const menu = document.querySelector(".menu");
 
 
 // Selecionando o link que esta dentro do h2
-const textobotao = botaoMenu.querySelector("a")
+const textobotao = botaoMenu.querySelector("a");
 
 botaoMenu.addEventListener("click", function(event){
 
