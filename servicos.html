@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços</title>
+<!-- Importado o css do plugin Lightbox -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -34,14 +36,14 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis necessitatibus repudiandae amet doloremque modi, in repellendus perspiciatis cumque fuga molestiae quas eos id ut eligendi consequatur enim provident! Sapiente, atque!</p>
 
             <figure class="fotos">
-               <a href="imagens/desenvolvimento-web.jpg" target="_blank"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+               <a data-title="desenvolvimento de sites" data-lightbox="fotos" href="imagens/desenvolvimento-web.jpg" target="_blank"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
 
-               <a href="./imagens/design-grafico.jpg" target="_blank">
+               <a data-title="design-grafico impactante" data-lightbox="fotos" href="./imagens/design-grafico.jpg" target="_blank">
                 <img src="imagens/design-grafico-mini.jpg" alt=""></a>
 
-                <a href="imagens/marketing-digital.jpg" target="_blank"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
+                <a data-title="venda e conveça" data-lightbox="fotos" href="imagens/marketing-digital.jpg" target="_blank"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
 
-                <a href="imagens/consultoria-treinamento.jpg" target="_blank"><img src="imagens/consultoria-treinamento-mini.jpg" alt="">
+                <a data-title="prepare-se para o mercado" data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg" target="_blank"><img src="imagens/consultoria-treinamento-mini.jpg" alt="">
                 </a>
 
             </figure>
@@ -65,7 +67,24 @@
 
 
     </footer>
+
+<!-- importaçâo da biblioteca jQuery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<!-- importaçao do js do plugin/extensao lightbox -->
+    <script src="lightbox/js/lightbox.min.js"></script>
+
     <script src="js/menu.js"></script>
+
+
+    <script>
+        lightbox.option({
+            albumLabel: "Foto %1 de %2"
+
+        });
+    </script>
 
 </body>
 
