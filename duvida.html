@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato - Inicio</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+</head>
+<style>
+
+</style>
+
+
+
+
+
+<body>
+
+    <header>
+        <div class="limitador">
+            <h1><a href="index.html">Simplicity</a></h1>
+            <nav>
+                <h2><a href="">Menu &equiv; </a></h2>
+                <ul class="menu ">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="produtos.html">produtos</a></li>
+                    <li> <a href="servicos.html">Serviços</a></li>
+                    <li> <a href="contato.html">Opinião</a></li>
+                    <li> <a href="duvida.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <article class="limitador conteudo">
+            <h2 class="contato">Produtos</h2>
+            <p>Vc gostou do site?
+                Deixe sua sugestão ou opinião para melhorar o site.</p>
+
+            <form action="https://formspree.io/f/mwkdyrbl" method="post" autocomplete="off">
+                <div>
+                    <!-- Nome -->
+                    <label for="">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+</div>
+
+    
+
+
+
+
+
+                    <div>
+                        <label for="assunto">Assunto</label>
+                        <select name="assunto" id="assunto">
+                            
+                            <option value=""></option>
+                            <option>Duvidas</option>
+                            <option>Elogios</option>
+                            <option>Reclamaçôes</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <!-- mensagem -->
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+                    </div>
+
+                    <button type="submit">Enviar dados</button>
+
+            
+
+
+
+
+
+            </form>
+            <p id="my-form-status"> </p>
+
+        </article>
+
+
+    </main>
+
+    <footer>
+        <p>Projeto-Intregador è um site ficticio desenvolvido,
+            para fins educacionais &copy; <b>giuse_ppe___cs1703</b>
+            - <time>2023</time> </p>
+
+
+    </footer>
+    
+    <!-- importaçâo da biblioteca jQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<!-- importaçâo do plugin/extensâo jQuery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
+
+</body>
+
+</html>
